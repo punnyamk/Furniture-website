@@ -70,7 +70,7 @@ function Services() {
 
               {/* Read More Button */}
               <button
-                className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-sm uppercase text-sm transition duration-300"
+                className="bg-yellow-500 hover:bg-black text-white font-bold py-3 px-8 rounded-sm uppercase text-sm transition duration-300"
                 onClick={() => console.log(`Navigating to ${service.title}`)}
               >
                 READ MORE

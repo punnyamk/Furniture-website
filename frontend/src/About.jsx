@@ -1,6 +1,7 @@
 import React from 'react';
 import img1 from './assets/img1.png'
 
+
 function About() {
   return (
     <section className="bg-yellow-500 py-20 h-150"> {/* Main section with yellow background and padding */}
@@ -17,24 +18,26 @@ function About() {
             believable. There are many variations of passages of Lorem Ipsum
             available, but the majority have
           </p>
-          <button
-            className="
-              bg-gray-800 
-              hover:bg-gray-900 
-              text-white 
-              font-bold 
-              py-3 
-              px-8 
-              rounded-sm 
-              uppercase 
-              text-sm 
-              transition 
-              duration-300
-            "
-            onClick={() => console.log('Read More About Us clicked')}
-          >
-            READ MORE
-          </button>
+         <button
+  className="
+    bg-gray-800 
+    text-white 
+    font-bold 
+    py-3 
+    px-8 
+    rounded-sm 
+    uppercase 
+    text-sm 
+    transition 
+    duration-300
+    hover:bg-white 
+    hover:text-black
+  "
+  onClick={() => console.log('Read More About Us clicked')}
+>
+  Read More 
+</button>
+
         </div>
 
         {/* Right Section: Image */}

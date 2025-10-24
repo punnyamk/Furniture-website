@@ -82,13 +82,13 @@ function Projects() {
                 />
 
                 {/* Overlay Button */}
-                <div
-                  className={`absolute inset-0 flex flex-col items-center justify-center transition-all duration-500 ${
-                    project.isSpecial
-                      ? "opacity-100 bg-yellow-500 bg-opacity-20"
-                      : "opacity-0 group-hover:opacity-100 bg-black bg-opacity-60"
-                  }`}
-                >
+                 <div
+    className={`absolute inset-0 flex flex-col items-center justify-center transition-all duration-500
+      ${project.isSpecial
+        ? "opacity-100 bg-yellow-500 bg-opacity-20"
+        : "opacity-0 group-hover:opacity-100 group-hover:bg-amber-200 group-hover:bg-opacity-90"
+    }`}
+  >
                   <button className="border-2 border-white text-white font-semibold py-3 px-6 uppercase tracking-wider text-sm hover:bg-white hover:text-black transition duration-300">
                     View More
                   </button>

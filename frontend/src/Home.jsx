@@ -38,13 +38,12 @@ function Home() {
         <div className="absolute inset-0 bg-white/10"></div>
 
         {/* Centered Content */}
-        <div className="absolute inset-0 flex flex-col items-center text-center px-6 mt-24 md:mt-32 ">
+        <div className="absolute inset-0 flex flex-col items-center text-center px-6 mt-24 md:mt-32  ">
           {/* Move text upward */}
           <div className="mt-16 md:mt-20 ">
-            <h2 className="text-6xl md:text-8xl font-thin text-black tracking-wide relative bottom-18 pt-10">
+          <h2 className="md:text-8xl font-thin text-black relative bottom-18 pt-10 slide">
   FURNITURE
 </h2>
-
             <p className="text-gray-800 text-sm md:text-base mt-4 max-w-2xl relative bottom-18 pb-50">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form.
@@ -52,21 +51,21 @@ function Home() {
           </div>
 
           {/* Add large space before button */}
-          <button className="mt-12 bg-yellow-500 text-white text-sm md:text-base font-semibold px-8 py-3 hover:bg-yellow-600 transition-all duration-300">
+          <button className="mt-12 bg-yellow-500 text-white text-sm md:text-base font-semibold px-8 py-3 hover:bg-black transition-all duration-300">
             CONTACT US
           </button>
         </div>
 
         {/* Navigation Arrows */}
         <div className="absolute inset-y-0 left-12 flex items-center">
-          <button className="bg-black text-white p-8 rounded-full hover:bg-gray-800 transition" >
+          <button className="bg-black text-white p-8 rounded-full hover:bg-amber-300 transition" >
             <a href="Home"></a>
             <FaArrowLeft />
           </button>
         </div>
 
         <div className="absolute inset-y-0 right-12 flex items-center">
-          <button className="bg-black text-white p-8 rounded-full hover:bg-gray-800 transition">
+          <button className="bg-black text-white p-8 rounded-full hover:bg-amber-300 transition">
             <FaArrowRight />
           </button>
         </div>
