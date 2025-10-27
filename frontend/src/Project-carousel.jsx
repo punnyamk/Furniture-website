@@ -41,7 +41,7 @@ function ProjectsCarousel() {
           {/* Left Arrow */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 md:-left-16 bg-black text-white p-4 hover:bg-gray-800 transition rounded-md z-10"
+            className="absolute left-0 md:-left-16 bg-black text-white p-4 hover:bg-amber-400 transition rounded-md z-10"
           >
             <FaChevronLeft size={18} />
           </button>
@@ -49,23 +49,40 @@ function ProjectsCarousel() {
           {/* Slider Container */}
           <div className="w-full overflow-hidden max-w-5xl ">
             <div
-              className="flex transition-transform duration-[1500ms] ease-in-out "
+              className="flex transition-transform duration-[1500ms] ease-in-out"
               style={{
                 transform: `translateX(-${currentIndex * 100}%)`,
               }}
             >
               {projects.map((project) => (
-                <div key={project.id} className="min-w-full flex justify-center gap-6">
+                <div
+                  key={project.id}
+                  className="min-w-full flex justify-center gap-6"
+                >
                   {projects.map((item, i) => (
                     <div key={i} className="w-1/3 flex-shrink-0">
+                      {/* Card */}
                       <div className="relative group overflow-hidden rounded-md shadow-md">
+                        {/* Image */}
                         <img
                           src={item.img}
                           alt={item.title}
-                          className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
+                          className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
                         />
-                        <div className="absolute bottom-0 left-0 right-0  bg-opacity-50 py-3 text-white text-sm font-semibold">
+
+                        {/* Always-visible Title */}
+                        <div className="absolute bottom-0 left-0 right-0  py-3 text-white text-sm font-semibold">
                           {item.title}
+                        </div>
+
+                        {/* Hover Transparent Overlay with Light Orange Shade */}
+                        <div className="absolute inset-0 bg-amber-500 group-hover:bg-orange-300/80 transition-all duration-500 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100">
+                          <button className="border border-white px-6 py-2 mb-3 text-sm font-semibold text-white  ">
+                            VIEW MORE
+                          </button>
+                          <p className="text-lg font-semibold text-white">
+                            {item.title}
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -78,7 +95,7 @@ function ProjectsCarousel() {
           {/* Right Arrow */}
           <button
             onClick={nextSlide}
-            className="absolute right-0 md:-right-16 bg-yellow-400 text-white p-4 hover:bg-yellow-500 transition rounded-md z-10"
+            className="absolute right-0 md:-right-16 bg-black text-white p-4 hover:bg-yellow-500 transition rounded-md z-10"
           >
             <FaChevronRight size={18} />
           </button>

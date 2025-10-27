@@ -106,7 +106,7 @@ const Carousel = () => {
           k={() =>
             changeSlide((current - 1 + slides.length) % slides.length, "left")
           }
-          className="bg-amber-300 text-white p-9 rounded-full hover:bg-black transition "
+          className="bg-black text-white p-9 rounded-full hover:bg-amber-300 transition "
         >
           <FaArrowLeft />
         </button>
