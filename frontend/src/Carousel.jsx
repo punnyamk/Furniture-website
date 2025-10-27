@@ -45,7 +45,7 @@ const Carousel = () => {
   return (
     <div
       {...handlers}
-      className="relative w-full h-screen flex items-center justify-center overflow-hidden"
+      className="relative w-full h-[800px] flex items-center justify-center overflow-hidden"
       style={{
         backgroundImage: `url(${bannerbg})`,
         backgroundSize: "cover", 
@@ -88,7 +88,7 @@ const Carousel = () => {
             : "translate-x-full opacity-0"
         }`}
       >
-        <h2 className=" md:text-8xl  mb-4 font-stretch-normal text-black pt-2 ">
+        <h2 className=" md:text-8xl  mb-4 font-stretch-normal text-black pt-35 ">
           {slides[current].title}
         </h2>
         <p className=" mb-8 max-w-2xl mx-auto pb-80 text-black ">
