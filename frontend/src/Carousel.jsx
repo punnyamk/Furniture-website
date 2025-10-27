@@ -88,10 +88,10 @@ const Carousel = () => {
             : "translate-x-full opacity-0"
         }`}
       >
-        <h2 className=" md:text-8xl  mb-4 font-stretch-normal text-black pt-35 ">
+        <h2 className=" md:text-8xl  mb-4 font-stretch-normal text-black pt-2 ">
           {slides[current].title}
         </h2>
-        <p className=" mb-8 max-w-2xl mx-auto pb-70 text-black ">
+        <p className=" mb-8 max-w-2xl mx-auto pb-80 text-black ">
           {slides[current].subtitle}
         </p >
         <button className="bg-yellow-500 hover:bg-black text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300">
@@ -102,7 +102,8 @@ const Carousel = () => {
       {/* ✅ Left Arrow */}
       <div className="absolute left-10 top-1/2 -translate-y-1/2 z-20">
         <button
-          onClick={() =>
+          onClic
+          k={() =>
             changeSlide((current - 1 + slides.length) % slides.length, "left")
           }
           className="bg-amber-300 text-white p-9 rounded-full hover:bg-black transition "
