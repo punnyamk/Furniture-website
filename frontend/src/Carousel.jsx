@@ -88,7 +88,7 @@ const Carousel = () => {
             : "translate-x-full opacity-0"
         }`}
       >
-        <h2 className=" md:text-8xl  mb-4 font-stretch-normal text-black pt-20 ">
+        <h2 className=" md:text-8xl  mb-4 font-stretch-normal text-black pt-35 ">
           {slides[current].title}
         </h2>
         <p className=" mb-8 max-w-2xl mx-auto pb-90 text-black ">
