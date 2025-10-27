@@ -48,23 +48,27 @@ function Getquote() {
 
         {/* Button */}
         <button
-          className="
-            bg-black 
-            hover:bg-gray-800 
-            text-white 
-            font-bold 
-            py-4 
-            px-12 
-            uppercase 
-            text-sm 
-            tracking-wider 
-            transition 
-            duration-300
-          "
-          onClick={() => console.log('Get A Quote button clicked')}
-        >
-          GET A QUOTE
-        </button>
+  className="
+    bg-black 
+    text-white 
+    font-bold 
+    py-4 
+    px-12 
+    uppercase 
+    text-sm 
+    tracking-wider 
+    
+    transition 
+    duration-300
+    hover:bg-white 
+    hover:text-black
+    rounded-[10px]
+  "
+  onClick={() => console.log('Get A Quote button clicked')}
+>
+  GET A QUOTE
+</button>
+
       </div>
     </section>
   );
